@@ -1,0 +1,21 @@
+Entendendo o que é WebPack
+
+Dentro do JavaScript podemos importar basicamente qualquer tipo de arquivo
+
+O webpack estipula uma serie de configurações,chamadas de Loders, que vão ensinar para a aplicação como ele vão
+como se deve tratar esses arquivos.Convertendo de uma forma legivel para o browser
+
+Para instalar o webpack:
+
+yarn add webpack webpack-cli -D
+
+__dirname --> Pegar o diretório do arquivo que esta sendo editado
+
+ test: /\.jsx$/ --> Para verificar se é um arquivo JavaScript,devemos saber se a extensão do arquivo
+ termina com .jsx,logo colocamos "$" para indicar que é no termino do arquivo.
+
+ Comando para instalar babel-loader :
+ yarn add babel-loader -D
+
+ Para executar o webpack: yarn webpack
+ 

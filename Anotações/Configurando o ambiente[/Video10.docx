@@ -1,0 +1,6 @@
+Importando arquivos cross
+
+tivemos que configurar o webpack para o caso de receber arquivos cross e adicionamos
+o loader para trabalhar em conjunto com o webpack,para adiciona-lo:
+
+yarn add atyle-loader css-loader -D

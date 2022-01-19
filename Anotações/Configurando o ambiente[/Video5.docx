@@ -1,0 +1,12 @@
+Quando estamos trabalhando com React o nosso index.html possui apenas uma div onde serão construidos todas a estrutura
+da nossa aplicação(pagina)
+
+Função render --> Recebe dois parametros, o primeiro, o que eu quero exibir(renderizar) em tela
+e o segundo dentro de qual elemento eu quero renderizar
+
+Sempre que mudar algo no arquivo "index.jsx" salvar e executar o yarn webpack novamente
+
+Podemos executar o webpack de duas formas, "development" e "production"
+
+development --> enquanto a aplicação esta em ambiente de desenvolvimento.Muito mais rápido
+production --> Para produção

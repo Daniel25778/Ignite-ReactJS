@@ -1,0 +1,10 @@
+Aprendendo a utilizar a função de dev-server dentro do webpack
+
+Comando para adicionar:
+
+yarn add webpack-dev-server -D
+
+Serve para verificar se há alguma alteração nos arquivos src e atualizar o código convertido para o browser
+,evitando a obrigação de salvar e executar o webpack manualmente quando há alguma alteração.
+
+ContentBase --> Mudou para --> static

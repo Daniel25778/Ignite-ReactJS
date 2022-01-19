@@ -1,0 +1,7 @@
+Criar um package.json --> Informações principais do projeto 
+
+yan init -y
+
+Para adicionar a biblioteca React a partir do yarn utilizar o comando yarn add react
+
+Para adicionar react dom --> yarn add react-dom

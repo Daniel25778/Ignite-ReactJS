@@ -1,0 +1,8 @@
+Entendendo sobre componentes dentro do React:
+
+Componentes no React são como as Tags em HTML,componentes são formas de organizar
+a aplicação.
+
+Um componente em React é escrito como uma função com a primeira letra do seu nome em 
+letra maiuscula e que retorna um HTML,Por convenção não devemos criar mais de um componente
+por arquivo

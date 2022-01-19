@@ -1,0 +1,7 @@
+Aprendendo a configurar um puglin para não precisar importar o arquivo js no index.html
+
+Para isso vamos utilizar o htm-webpack-plugin -D
+
+Comando para isso:
+yarn add html-webpack-plugin 
+

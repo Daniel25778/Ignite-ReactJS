@@ -1,0 +1,11 @@
+Configurando o webpack,para ambiente de desenvolvimento e para produção
+
+process.env.NODE_ENV --> Indica qual para qual ambiente(developer ou production) a aplicação esta rodando
+
+
+ source-map --> DEVTOOL PARA production
+ eval-source-map --> devtool para development
+
+
+ yarn add cross-env -D --> Para definir variaveis ambientes independente do sistema operacional utilizado
+ 

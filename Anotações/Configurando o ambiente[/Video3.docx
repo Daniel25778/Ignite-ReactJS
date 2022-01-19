@@ -1,0 +1,49 @@
+Aprendendo sobre Babel
+
+Serve para converter os nossos códigos para que od navegadores entendam os códigos
+Isso porque o JavaScript é uma linguagem que se atualiza muito,logo existem alguns
+comandos que os navegadores ainda não entendem
+
+    EXEMPLO de comando em JavaScript e depois trazução com Babel para o navegador
+
+const user = {
+  name:"Daniel",
+}
+
+console.log(user.address?.street)
+
+//////////
+
+
+
+
+Para adicionar o Babel atraves do yarn utilizar o comando --> yarn add @babel/core @babel/cli @babel/preset-env -D 
+
+babel core --> biblioteca do babel,onde estão abrigadas as suas funcionalidades
+babel cli --> executar o babel atraves da linha de comando(terminal)
+    abrir menu de ajuda por exemplo: yarn babel -h
+@babel/preset-env --> serve para saber para qual ambiente de desenvolvimento esta sendo trabalho o seu código se é para rodar em navegador ou não.
+  
+
+Utilizamos o comando abaixo quando temos o objetivo de converter um arquivo atraves do babel
+sendo que devemos indicar o arquivo que queremos converter e depois qual sera a saida desse arquivo
+
+o "--out-file" --> serve para indicar que o arquivo escrito consecutivamente será o arquivo de saida
+
+
+"dist" --> seria de distribuição
+
+e o nome de arquivo definido como "bundle" se deve por conta de ser chamado assim,os arquivos convertidos pelo o babel
+
+yarn babel src/index.js --out-file dist/bundle.js
+
+
+O react tem a particularidade de entender códigos em HTML,porém o conversor babel não consegue entender
+por isso, utilizamos uma biblioteca do babel chamada preset-react para que ele possa entender
+o código em HTML e assim fazer a devida conversão.
+
+Para isso utilizamos o comando --> yarn add @babel/preset-react -D 
+
+Mudamos o nome do arquivo de "index.js" para "index.jsx" porque é assim que é chamado
+o arquivo que trata de HTML juntamente com JavaScript,logo o icone do arquivo muda para
+o simbolo do react pois isso é uma particularidade dele.

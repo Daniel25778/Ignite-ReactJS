@@ -1,0 +1,5 @@
+Adicionando o pré processador de CSS "Sass":
+
+ yarn add sass-loader -D --> Para entender arquivos sass
+
+ yarn add node-sass -D --> adicionando a biblioteca sass
