@@ -1,0 +1,12 @@
+Consumindo a api do GitHub e utilizando os repositorios para listar na aplicação
+
+useEffect --> Serve para disparar uma função quando algo acontecer na aplicação,como por exemplo
+a mudança de uma variavel
+
+Ele recebe dois parametros, o primeiro é qual função queremos executar e o segundo
+é quando queremos executar a função indicada no primeiro parametro(o segundo parametro,é chamado de dependencias)
+
+
+Cuidado para não deixar o useEffect sem o segundo parametro se não ele executara infinitamente
+
+é importante não deixarmos a dependencia como um objeto de alteração da função do primeiro parametro

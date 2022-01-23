@@ -5,11 +5,11 @@
 export function RepositoryItem(props){
     return( //SEMPRE QUE QUEREMOS RETORNAR MAIS DE UMA LINHA DE CóDIGO HTML COLOCAMOS PARENTESES EM VOLTA AO ABRIR O RETURN 
         <li>
-            <strong>{props.repository.name ?? 'Default'}</strong> 
+            <strong>{props.repository.name}</strong> 
 {/* //Caso o não passar-mos o argumento,utilizamos do "??" para indicar que se não tiver argumento escrever 'Default' */}
             {/* PARA COLOCAR UM CÓDIGO JS DENTRO DE UM HTML,ENVOLVE-LO COM CHAVES */}
             <p>{props.repository.description}</p>
-            <a href={props.repository.link}>Acessar repositório</a>
+            <a href={props.repository.html_url}>Acessar repositório</a>
         </li>
     )
 }
