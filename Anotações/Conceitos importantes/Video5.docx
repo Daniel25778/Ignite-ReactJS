@@ -1,0 +1,6 @@
+    Utilizamos o fast Refreash para no momento de desenvolvimento podermos alterar
+    o nosso codigo sem resetar o estado das nossas variaveis.
+
+    Para instalar
+
+    yarn add -D @pmmmwh/react-refresh-webpack-plugin react-refresh

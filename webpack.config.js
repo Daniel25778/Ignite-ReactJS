@@ -1,7 +1,7 @@
 const path = require('path') 
 
 const HtmlWebpackPlugin = require('html-webpack-plugin') // IMPORTANDO O PLUGIN DE WEBPACK
-
+const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 
 const isDevelopment = process.env.NODE_ENV !== 'production' // VERIFICAR SE O AMBIENTE DA APLICAÇÃO É DE DESENVOLVIMENTO
 
@@ -18,18 +18,27 @@ module.exports = {
     },
     devServer:{
            static: path.resolve(__dirname, 'public'), //Referenciando onde esta o HTML da aplicação      
-    },
+           hot: true,
+        },
     plugins: [
+        isDevelopment && new ReactRefreshWebpackPlugin(),//Adicionando plugin de refresh caso estivermos em ambiente de desenvolvimento 
         new HtmlWebpackPlugin({
            template: path.resolve(__dirname, 'public', 'index.html') //Qual arquivo de template ele irá utilizar para gerar o nosso html
         })
-    ],
+    ].filter(Boolean),//Para entender valores retornados como false and true
     module:{ //Configurações de como a aplicação vai lidar com cada tipo de arquivo
         rules: [
             {
               test: /\.jsx$/, //Expressão regular para verificar se o arquivo recebido é JavaScript,ou não
               exclude: /node_modules/, //Excluir os arquivos ja convertidos pelo o node,pois isso é responsabilidade do webpack
-              use: 'babel-loader'// Age em conjunto com o webpack no momento de conversão
+              use: {
+                 loader: 'babel-loader',
+                 options:{
+                  plugins:[
+                    isDevelopment && require.resolve('react-refresh/babel')
+                  ].filter(Boolean)
+                 } 
+              }// Age em conjunto com o webpack no momento de conversão
             },
             {
                 test: /\.css$/, //Expressão regular para verificar se o arquivo recebido é css,ou não

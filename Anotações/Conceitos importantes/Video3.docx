@@ -1,0 +1,29 @@
+Por padrão o React não fica monitorando a mudança de valores de variaveis para poder renderizar
+o HTML novamente na tela.Logo precisamos definir as variaveis que precisam ser monitorada
+ao ocorrer uma mudança de valores nelas.
+
+Por isso utilizamos a condição de estado.Através do hook 'useState',hook é o nome dado a 
+toda a função do proprio React que tem por inicio a palavra "use".é necessário importar os hooks
+
+Quando criamos uma variavel utilizando o useState, em vez de retornar somente o valor
+da variavel,também é retornado o valor que voce esta setando na variavel,tudo isso é
+retornado em forma de array.
+
+
+IMPORTANTE SEMPRE QUE APARECER O ERRO :
+
+WARNING in ./src/Components/NavBar/MainMenuItemMobile.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* /Users/path/to/babel-loader/lib/index.js!/Users/path/to/NavBar/MainMenuItemMobile.js
+    Used by 1 module(s), i. e.
+    /Users/path/to/babel-loader/lib/index.js!/Users/path/to/NavBar/ConstructedMainMenuItems.js
+* /Users/path/to/babel-loader/lib/index.js!/Users/path/to/Navbar/MainMenuItemMobile.js
+    Used by 1 module(s), i. e.
+    /Users/path/to/babel-loader/lib/index.js!/Users/path/to/Navbar/ConstructedMainMenuItems.js
+.....
+(webpack)-hot-middleware/client.js ./src/index.js
+What's confusing is that the 'two' files referenced are just one file—
+
+VERIFICAR SE O NOME DOS IMPORTS ESTÃO ESCRITOS CORRETAMENTE.

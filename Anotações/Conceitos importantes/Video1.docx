@@ -6,3 +6,6 @@ a aplicação.
 Um componente em React é escrito como uma função com a primeira letra do seu nome em 
 letra maiuscula e que retorna um HTML,Por convenção não devemos criar mais de um componente
 por arquivo
+
+Podemos chamar mesmos componentes varias vezes dentro do nosso HTML evitando assim a repetição de código HTML 
+para a realização de uma listagem por exemplo.
