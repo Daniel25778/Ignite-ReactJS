@@ -1,0 +1,13 @@
+Para adicionar o typeScript,devemos utilizar o comando :
+
+yarn add typeScript -D
+
+Para o babel entender typeScript utilizamos o comando no terminal 
+
+yarn add @babel/preset-typescript -D
+
+Adicionar também
+
+yarn add @types/react-dom -D
+
+yarn add @types/react -D
